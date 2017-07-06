@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btn1;
     private Button btn2;
+    private Button btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn1.setOnClickListener(this);
         btn2 = (Button) findViewById(R.id.btn2);
         btn2.setOnClickListener(this);
+        btn3 = (Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(this);
     }
 
     @Override
@@ -33,7 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, SwipeLayoutDemoActivity.class));
                 break;
             case R.id.btn2:
-                startActivity(new Intent(this,SwipeRecyclerViewActivity.class));
+                startActivity(new Intent(this, SwipeRecyclerViewActivity.class));
+                break;
+            case R.id.btn3:
+                startActivity(new Intent(this, CartActionViewActivity.class));
                 break;
         }
     }

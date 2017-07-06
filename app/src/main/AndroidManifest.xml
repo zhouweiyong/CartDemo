@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".SwipeLayoutDemoActivity"/>
         <activity android:name=".SwipeRecyclerViewActivity"/>
+        <activity android:name=".CartActionViewActivity"/>
     </application>
 
 </manifest>

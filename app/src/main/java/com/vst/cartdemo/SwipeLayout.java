@@ -45,12 +45,13 @@ public class SwipeLayout extends HorizontalScrollView {
         this.setFocusableInTouchMode(true);
         this.setFocusable(true);
         try {
-            swipeRecyclerView = (SwipeRecyclerView) this.getParent().getParent();
-            swipeRecyclerView.addSwipeLayout(this);
             LinearLayout mWrapperView = (LinearLayout) getChildAt(0);
             mContentView = (ViewGroup) mWrapperView.getChildAt(0);
             mSwipeMenuView = (ViewGroup) mWrapperView.getChildAt(1);
             mContentView.getLayoutParams().width = w;
+            swipeRecyclerView = (SwipeRecyclerView) this.getParent();
+            swipeRecyclerView.addSwipeLayout(this);
+
             Log.i("zwy",">>>>add");
         } catch (Exception e) {
             e.printStackTrace();
