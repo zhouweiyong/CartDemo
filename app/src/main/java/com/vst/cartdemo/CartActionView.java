@@ -91,7 +91,7 @@ public class CartActionView extends View implements View.OnTouchListener {
 
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         textPaint.setColor(Color.parseColor("#323232"));
-        textSize = 22 * (context.getResources().getDisplayMetrics().scaledDensity) + 0.5f;
+        textSize = 11 * (context.getResources().getDisplayMetrics().scaledDensity) + 0.5f;
         textPaint.setTextSize(textSize);
 
         cartNumPressPaint = new Paint();
